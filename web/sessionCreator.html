@@ -1,7 +1,7 @@
 <html>
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118163395-1"></script>
+    <script async src="https://googletagmanager.com"></script>
     <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -24,20 +24,22 @@
     <script type="text/javascript" src="scripts/includes/lz-string.min.js"></script>
     <script type="text/javascript" src="scripts/includes/stacktrace.min.js"></script>
     <script type="text/javascript" src="scripts/includes/tracer.js"></script>
+    
+    <!-- Correção absoluta para o GitHub Pages carregar o motor do Farrago -->
     <script type="text/javascript" src="scripts/Controllers/SessionCustomizer/SessionCustomizerController.dart.js"></script>
 		
-    		<title>
-    SBURBSim Session Customizer
-</title>
+    <title>SBURBSim Session Customizer</title>
 </head>
 <body>
 <div id = "navbar"></div>
 <h3 id = "seedText"></h3>
 <br>
 
-
 <div id = "story">
-
+    <!-- Se o motor travar, este aviso vai te guiar -->
+    <noscript>
+        <h2 style="color: red; text-align: center;">Erro: O JavaScript está desativado ou o arquivo do simulador bloqueou!</h2>
+    </noscript>
 </div>
 
 <img id="loading.png" src = "images/loading.png" style="display:none">
